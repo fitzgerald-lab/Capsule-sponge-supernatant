@@ -1,6 +1,6 @@
 # Machine Learning Analysis for Cell-Free Capsule Sponge Biomarkers
 
-This repository contains analysis code for the capsule sponge supernatant manuscript (Ustaoglu A, et al) being submitted to Gastroenterology journal
+This repository contains analysis code for the capsule sponge supernatant manuscript (Ustaoglu A, et al) being submitted to Gut journal
 
 The analyses focus on evaluating the diagnostic performance of a panel of cell-free protein biomarkers measured from capsule sponge supernatant for the detection of Barrett’s oesophagus.
 
