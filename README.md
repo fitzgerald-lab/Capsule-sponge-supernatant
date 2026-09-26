@@ -1,4 +1,4 @@
-# Machine Learning Analysis for Cell-Free Capsule Sponge Biomarkers
+# Logistic Regression Analysis for Cell-Free Capsule Sponge Biomarkers
 
 This repository contains analysis code for the capsule sponge supernatant manuscript (Ustaoglu A, Pavada S, et al) being submitted to Gastroenterology journal
 
