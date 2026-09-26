@@ -8,15 +8,15 @@ The analyses focus on evaluating the diagnostic performance of a panel of cell-f
 
 ## Overview of Notebook Contents
 
-The Jupyter notebook provided in this repository (`MLClassification_exploratory.ipynb`) was used during the study to:
+The Jupyter notebook provided in this repository (`Manuscript_Figures.ipynb`) was used during the study to:
 
-- Train and compare multiple clinically appropriate classification models  
-  (logistic regression, random forest, XGBoost, LightGBM)
-- Perform cross-validated evaluation of biomarker panels
-- Generate visualization outputs corresponding to **Figures 3, 4, and 5** of the manuscript, including:
+- Train a diagnostic log1p logistic regression model 
+- Perform cross-validated two-protein biomarker panel across independent prospective cohorts
+- Generate visualization outputs corresponding to **Figures 3 and 4** of the manuscript, including:
   - Cross-validated ROC curves
-  - Summary performance metrics across models
+  - Summary protein concentrations across cohorts
   - Feature contribution and interpretability analyses (SHAP)
+  - Model's confidence intervals and accuracy in predicting clinical outcome
 
 This notebook reflects the exploratory and comparative phase of model development used to inform figure generation and model selection.
 
@@ -26,18 +26,16 @@ This notebook reflects the exploratory and comparative phase of model developmen
 
 As described in the manuscript Methods:
 
-- **Cohorts 5 and 6** were used for model development and cross-validation.
-- **Cohort 7** was reserved as a locked external validation cohort.
+- **Training cohort** was used for model development
+- **Dysplasia cohort and prospective cohort** were reserved as a locked external validation and test cohort, respectively.
 
 The final reported diagnostic performance metrics in the manuscript were generated using these predefined cohort assignments and a locked analysis pipeline.
-
-The notebook provided here includes exploratory code used during figure development and model comparison. A fully manuscript-aligned analysis script, reflecting the exact cohort separation and reporting logic used for final results, will be released as part of the revision process and/or upon manuscript acceptance.
 
 ---
 
 ## Reproducibility Notes
 
-- Analyses were performed in Python using `scikit-learn`, `LightGBM`, `XGBoost`, and `SHAP`.
+- Analyses were performed in Python using `scikit-learn`, `matplotlib`, and `SHAP`.
 - Random seeds were fixed to ensure reproducibility.
 - Standard preprocessing steps (imputation and scaling) were applied consistently across models during cross-validation.
 
